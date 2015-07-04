@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JapanTravel</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="BasicInformationTitle">總覽</string>
+    <string name="FoodTitle">美食</string>
+    <string name="Shinsai_Dotonbori">心齋橋與道頓堀</string>
+    <string name="KuromonMarket">黑門市場</string>
+    <string name="ViewTitle">景點</string>
+    <string name="OsakaView">大阪景點</string>
+    <string name="KyotoView">京都景點</string>
+    <string name="NaraView">奈良景點</string>
+    <string name="TrafficTitle">交通</string>
+    <string name="OsakaTraffic">大阪交通</string>
+    <string name="KyotoTraffic">京都交通</string>
+    <string name="NaraTraffic">奈良交通</string>
+    <string name="ClickAddWeb">點選新增網頁</string>
+    <string name="WebTitle">網頁標題</string>
+    <string name="WebUrl">網頁連結</string>
+    <string name="AddWeb">新增網頁</string>
+    <string name="Confirm">確定</string>
+    <string name="Cancel">取消</string>
+    <string name="DeleteThisWeb">刪除這個網頁?</string>
+
+</resources>
