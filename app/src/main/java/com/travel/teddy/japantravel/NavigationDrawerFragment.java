@@ -19,11 +19,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
 import android.widget.ExpandableListView;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import com.com.travel.teddy.japantravel.lists.ExpandableBaseAdapter;
+import com.com.travel.teddy.japantravel.lists.listviewbase;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -105,19 +107,20 @@ public class NavigationDrawerFragment extends Fragment {
         });
 
         //setListViewData();
-        String[] value = {getString(R.string.BasicInformationTitle), getString(R.string.FoodTitle), getString(R.string.ViewTitle), getString(R.string.TrafficTitle),};
+        String[] value = {getString(R.string.BasicInformationTitle), getString(R.string.FoodTitle), getString(R.string.ShoppingTitle), getString(R.string.TrafficTitle),};
         //mDrawerListView.setAdapter(new ExpandableBaseAdapter(getActivity(),groupArray,childArray));
         //mDrawerListView.setAdapter(new ArrayAdapter<String>(getActivity(), R.layout.group_expandablelistview,value));
-        mDrawerListView.setAdapter(new ArrayAdapter<String>(
+        mDrawerListView.setAdapter(new listviewbase(getActivity(), value) {});
+        /*mDrawerListView.setAdapter(new ArrayAdapter<String>(
                 getActionBar().getThemedContext(),
                 android.R.layout.simple_list_item_activated_1,
                 android.R.id.text1,
                 new String[]{
                         getString(R.string.BasicInformationTitle),
                         getString(R.string.FoodTitle),
-                        getString(R.string.ViewTitle),
+                        getString(R.string.ShoppingTitle),
                         getString(R.string.TrafficTitle),
-                }));
+                }));*/
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
         return mDrawerListView;
     }

@@ -2,6 +2,7 @@ package com.com.travel.teddy.japantravel.lists;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -58,6 +59,10 @@ public class CustomListViewBaseAdapter extends BaseAdapter {
         Custom = inflater.inflate(R.layout.custom_listview,viewGroup,false);
         TextView WebTitleText;
         WebTitleText = (TextView) Custom.findViewById(R.id.WebTitleText);
+        //設定字型
+        Typeface face = Typeface.createFromAsset(FragmentContext.getAssets(),"fonts/Roboto-Bold.ttf");
+        WebTitleText.setTypeface(face);
+
         WebTitleText.setText(WebTitle[i]);
         Custom.setOnClickListener(new OnClickListener(WebTitle[i],WebUrl[i]){});
         return Custom;
